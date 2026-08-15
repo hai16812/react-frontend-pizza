@@ -1,28 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,600&family=Work+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
-@import "tailwindcss";
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --font-mono: "JetBrains Mono", monospace;
-  --color-char: #2b2b2b;
-  --color-ember: #d4572a;
-  /* ... */
-}
-@theme {
-  --color-char: #241512;
-  --color-char-2: #341f1a;
-  --color-crust: #F5E9D3;
-  --color-crust-2: #ECDBB9;
-  --color-ember: #C1440E;
-  --color-ember-2: #9C360A;
-  --color-basil: #47643A;
-  --color-cheese: #E4A33B;
-  --color-ink: #1C1310;
-  --color-smoke: #7A6A5F;
-
-  --font-display: 'Fraunces', 'Georgia', serif;
-  --font-body: 'Work Sans', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+@layer base {
+  :root {
+    --color-char: #241512;
+    --color-char-2: #341f1a;
+    --color-crust: #F5E9D3;
+    --color-crust-2: #ECDBB9;
+    --color-ember: #C1440E;
+    --color-ember-2: #9C360A;
+    --color-basil: #47643A;
+    --color-cheese: #E4A33B;
+    --color-ink: #1C1310;
+    --color-smoke: #7A6A5F;
+  
+    --font-display: 'Fraunces', 'Georgia', serif;
+    --font-body: 'Work Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
 }
 
 html { scroll-behavior: smooth; }
